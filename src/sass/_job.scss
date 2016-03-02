@@ -1,0 +1,40 @@
+.jobs-container {
+	display: flex;
+	flex-flow: row wrap;
+	padding-top: 50px;
+
+	.job {
+		@include set-size(100%, auto);
+		border: 3px solid $ligth-blue;
+		padding: 20px 0 0 10px;
+		color: $default-grey;
+		min-height: 205px;
+		max-width: 280px;
+		cursor: pointer;
+
+		.job__title {
+			@include apply-font('railway', 1.5em);
+			text-decoration: underline;
+			margin-bottom: 10px;
+			letter-spacing: 2px;
+		}
+
+		.job__description {
+			@include apply-font('fabrica', 1em);
+			@include set-size(90%, auto);
+			letter-spacing: 1px;
+			line-height: 1.2em;
+		}
+	}
+
+	.job--even {
+		@extend .job;
+		border: 3px solid $dark-blue;
+		margin-left: 0;
+	}
+
+	.job--odd {
+		@extend .job--even;
+		border: 3px solid $ligth-blue;
+	}
+}

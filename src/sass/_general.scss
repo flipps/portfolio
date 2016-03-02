@@ -3,7 +3,45 @@
 }
 
 body, html {
-	background-color: white;
+	background-color: $background-blue;
 	font-size: 16px;
 	height: 100%;
+}
+
+#wrapper {
+	@include set-size(100%, 100%);
+}
+
+//Browser border
+html:before,html:after,body:before,body:after{
+    content:"";
+    background:$default-grey;
+    position:fixed;
+    display:block;
+    z-index:5;
+}
+
+html:before{
+    height:10px;
+    right:0;
+    left:0;
+    top:0;
+}
+html:after{
+    width:10px;
+    bottom:0;
+    right:0;
+    top:0;
+}
+body:before{
+    height:10px;
+    bottom:0;
+    right:0;
+    left:0;
+}
+body:after{
+    width:10px;
+    bottom:0;
+    left:0;
+    top:0;
 }

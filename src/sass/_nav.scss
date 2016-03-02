@@ -1,0 +1,17 @@
+nav {
+	@include apply-font('railway', 1.1em);
+	@include set-size(280px, auto);
+	@include float(left);
+	padding: 50px 0 0 50px;
+	color: $default-grey;
+	display: inline-block;
+
+	.logotype {
+		margin-bottom: 25px;
+	}
+
+	li {
+		margin-bottom: 5px;
+		cursor: pointer;
+	}
+}

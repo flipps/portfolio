@@ -1,0 +1,19 @@
+//EASING
+$cubic-sine: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+$cubic-arc: cubic-bezier(0.445, 0, 0.760, 0.380);
+$cubic-in-out: cubic-bezier(0.565, 0.005, 1.000, 1);
+$sine-in-out: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+$cubic-out: cubic-bezier(0.000, 0.000, 0.580, 1.000);
+$expo-out: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$ease-in: cubic-bezier(0.420, 0.000, 1.000, 1.000);
+$ease-out: cubic-bezier(0.000, 0.000, 0.580, 1.000);
+$ease-in-out: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
+//COLORS
+$light-gray: #ebebeb;
+$medium-gray: #959595;
+$dark-gray: #6e6e6e;
+$darker-gray: #404142;
+
+$light-blue: #1ba6da;
+$dark-blue: #2862a0;

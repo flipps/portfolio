@@ -1,0 +1,29 @@
+{
+  "name": "Jarbas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "applicationName": "application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "compass-mixins": "^0.12.3",
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-debug": "^1.0.1",
+    "gulp-livereload": "^2.1.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sass": "^1.2.4",
+    "gulp-util": "^3.0.1"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11"
+  }
+}

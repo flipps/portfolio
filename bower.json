@@ -1,0 +1,12 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "authors": [
+    "Filipe Morais <fi.morais.mail@gmail.com>"
+  ],
+  "license": "MIT",
+  "directory": "src/js/vendor",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}

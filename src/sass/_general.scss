@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+}
+
+body, html {
+	background-color: white;
+	font-size: 16px;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	margin: 0 auto -100px;
+
+	header {
+		@include set-size(100%, auto);
+		@include center-x;
+		max-width: 960px;
+
+		.header-block {
+			@include set-size(100%, 100px);
+			position: relative;
+
+			.logo {
+				margin: 20px 20px 20px 10px;
+				position: absolute;
+			}
+
+			.company-name {
+				@include apply-font('Glegoo', 1.1rem);
+				position: absolute;
+				left: 90px;
+				top: 30px;
+			}
+
+			.date {
+				@include apply-font('Glegoo', 1.1rem);
+				position: absolute;
+				left: 90px;
+				top: 54px;
+			}
+		}
+	}
+
+	.content-division {
+		@include set-size(100%, 1px);
+		background-color: black;
+	}
+
+	.ads-list {
+		@include apply-font('Glegoo', 1.2rem);
+		@include center-x;
+		padding: 40px 0 0 10px;
+		max-width: 960px;	
+
+		.ad {
+			padding-bottom: 35px;
+		}
+
+		.list-title {
+			@include apply-font('Glegoo', 1.5rem);
+		}
+
+		.list-subtitle {
+			width: auto;
+			color: white;
+			padding: 10px;
+			margin-bottom: 35px;
+			display: inline-block;
+			background-color: black;
+		}
+
+		a {
+			color: black;
+		}
+	}
+
+	.push {
+		height: 100px;
+	}
+}
+
+footer {
+	@include set-size(100%, 100px);
+	background-color: black;
+	position: relative;
+
+	.donwloads {
+		@include center-x;
+		max-width: 960px;
+		
+		p {
+			@include apply-font('Glegoo', 1.2rem);
+			padding: 40px 0 40px 10px;
+			color: white;
+
+			a {
+				color: white;
+			}		
+		}
+		
+	}
+}

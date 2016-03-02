@@ -140,22 +140,27 @@ nav {
   display: inline;
   float: left;
   padding: 50px 0 0 50px;
-  color: #414141;
-  display: inline-block; }
-  /* line 9, /Users/fee/Documents/sites/portfolio/src/sass/_nav.scss */
+  color: #414141; }
+  /* line 8, /Users/fee/Documents/sites/portfolio/src/sass/_nav.scss */
   nav .logotype {
     margin-bottom: 25px; }
-  /* line 13, /Users/fee/Documents/sites/portfolio/src/sass/_nav.scss */
+  /* line 12, /Users/fee/Documents/sites/portfolio/src/sass/_nav.scss */
   nav li {
     margin-bottom: 5px;
     cursor: pointer; }
 
+@media screen and (max-width: 936px) {
+  /* line 19, /Users/fee/Documents/sites/portfolio/src/sass/_nav.scss */
+  nav {
+    display: block;
+    float: none; } }
+
 /* line 1, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
 .jobs-container {
-  display: flex;
   flex-flow: row wrap;
-  padding-top: 50px; }
-  /* line 6, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
+  padding: 50px 0;
+  display: flex; }
+  /* line 7, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
   .jobs-container .job, .jobs-container .job--even, .jobs-container .job--odd {
     width: 100%;
     height: auto;
@@ -165,25 +170,38 @@ nav {
     min-height: 205px;
     max-width: 280px;
     cursor: pointer; }
-    /* line 15, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
+    /* line 16, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
     .jobs-container .job .job__title, .jobs-container .job--even .job__title, .jobs-container .job--odd .job__title {
       font-family: 'railway';
       font-size: 1.5em;
       text-decoration: underline;
       margin-bottom: 10px;
       letter-spacing: 2px; }
-    /* line 22, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
+    /* line 23, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
     .jobs-container .job .job__description, .jobs-container .job--even .job__description, .jobs-container .job--odd .job__description {
       font-family: 'fabrica';
       font-size: 1em;
       width: 90%;
       height: auto;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       line-height: 1.2em; }
-  /* line 30, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
+  /* line 31, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
   .jobs-container .job--even, .jobs-container .job--odd {
     border: 3px solid #34314c;
     margin-left: 0; }
-  /* line 36, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
+  /* line 37, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
   .jobs-container .job--odd {
     border: 3px solid #47b8e0; }
+
+@media screen and (max-width: 936px) {
+  /* line 44, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
+  .jobs-container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    position: relative; } }
+
+@media screen and (max-width: 762px) {
+  /* line 53, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
+  .jobs-container .job, .jobs-container .job--even, .jobs-container .job--odd {
+    max-width: 100%; } }

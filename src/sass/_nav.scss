@@ -4,7 +4,6 @@ nav {
 	@include float(left);
 	padding: 50px 0 0 50px;
 	color: $default-grey;
-	display: inline-block;
 
 	.logotype {
 		margin-bottom: 25px;
@@ -13,5 +12,12 @@ nav {
 	li {
 		margin-bottom: 5px;
 		cursor: pointer;
+	}
+}
+
+@include maxWidth(936){
+	nav {
+		display: block;
+		float: none;
 	}
 }

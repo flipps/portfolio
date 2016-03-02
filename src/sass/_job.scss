@@ -1,7 +1,8 @@
 .jobs-container {
-	display: flex;
 	flex-flow: row wrap;
-	padding-top: 50px;
+	padding: 50px 0;
+	display: flex;
+
 
 	.job {
 		@include set-size(100%, auto);
@@ -22,7 +23,7 @@
 		.job__description {
 			@include apply-font('fabrica', 1em);
 			@include set-size(90%, auto);
-			letter-spacing: 1px;
+			letter-spacing: 0.5px;
 			line-height: 1.2em;
 		}
 	}
@@ -36,5 +37,21 @@
 	.job--odd {
 		@extend .job--even;
 		border: 3px solid $ligth-blue;
+	}
+}
+
+@include maxWidth(936) {
+	.jobs-container {
+		@include set-size(90%, auto);
+		@include center-x;
+		position: relative;
+	}
+}
+
+@include maxWidth(762){
+	.jobs-container {
+		.job {
+			max-width: 100%;
+		}
 	}
 }

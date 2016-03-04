@@ -12,6 +12,12 @@ nav {
 	li {
 		margin-bottom: 5px;
 		cursor: pointer;
+		transition: color .2s ease-in;
+	}
+
+	li:hover {
+		color: tomato;
+		transition: color .2s ease-out;
 	}
 }
 

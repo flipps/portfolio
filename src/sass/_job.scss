@@ -34,7 +34,7 @@
 			}
 
 			.job__title--over {
-				@include apply-font('railway', 1.5em);
+				@include apply-font('railway', 1.4em);
 				transform: translate3d(0px, 0px, 0px);
 				transition: transform .5s ease-in-out;
 				text-decoration: underline;
@@ -56,7 +56,7 @@
 		}
 
 		.job__title {
-			@include apply-font('railway', 1.5em);
+			@include apply-font('railway', 1.4em);
 			transform: translate3d(0px, 0px, 0px);
 			transition: transform .5s ease-in-out;
 			text-decoration: underline;

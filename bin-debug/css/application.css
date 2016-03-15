@@ -199,7 +199,7 @@ nav {
       /* line 36, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
       .jobs-container .job .job__mouseover .job__title--over, .jobs-container .job--even .job__mouseover .job__title--over, .jobs-container .job--odd .job__mouseover .job__title--over {
         font-family: 'railway';
-        font-size: 1.5em;
+        font-size: 1.4em;
         transform: translate3d(0px, 0px, 0px);
         transition: transform .5s ease-in-out;
         text-decoration: underline;
@@ -221,7 +221,7 @@ nav {
     /* line 58, /Users/fee/Documents/sites/portfolio/src/sass/_job.scss */
     .jobs-container .job .job__title, .jobs-container .job--even .job__title, .jobs-container .job--odd .job__title {
       font-family: 'railway';
-      font-size: 1.5em;
+      font-size: 1.4em;
       transform: translate3d(0px, 0px, 0px);
       transition: transform .5s ease-in-out;
       text-decoration: underline;
